@@ -12,7 +12,11 @@
    
 ## Installation:
    npm install
+
+## Running tests:
+   There are a number of tests in specs/convertSpec.js. To run them:  
    
+   your prompt> node_modules/.bin/jasmine
 
 ## Assumptions
    * Your conversions will fit within a numeric represntation in Node/JS.
