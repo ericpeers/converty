@@ -11,7 +11,7 @@
 //
 // Pounds (lb), Kilograms (kg), Ounces (oz)
 // Feet (ft), Inches (in), Meters (m)
-// Pint (pt), Fluid Ounces (fl oz)
+// Pint (pt), Fluid Ounces (fl oz), Bombers (NO ABBREVIATION ALLOWED BECAUSE THEY ARE BIG)
 //
 // Example usage:
 // var kilograms = new Conversion()
@@ -20,11 +20,10 @@
 //       .execute()
 //
 // Assumptions:
-//   * Your conversions will fit within a numeric representationi n Node/JS - 51 bits of precision in floats/mantissa!
+//   * Your conversions will fit within a numeric representation in Node/JS - 51 bits of precision in floats/mantissa!
 //   * You are sending down a string as per the original
 // Note that the Fluent/chaining functions (convert, to) will return an instance of Conversion, and execute will
 //  return a n.2 float, rounded to the neared 100th place.
-// N
 
 */
 
