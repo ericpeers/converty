@@ -38,7 +38,7 @@ describe("converty", function () {
 
   it ("should throw an exception with a null value", function () {
     expect( function () {
-      var cv = new Conversion().convert(null, "feet").to("inch");
+      var cv = new Conversion().convert(null, "feet").to("inch").execute();
       console.log(cv);
     }).toThrow(new Error("No source value set"))
   });

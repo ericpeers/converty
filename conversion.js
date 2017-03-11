@@ -173,7 +173,7 @@ Conversion.prototype.validateUnit = function(unitStr) {
 
 
 Conversion.prototype.convert = function(amount, unitStr) {
-  //add argument checks here
+  //add argument checks here. I can add a type of for amount and unitstr to ensure float/str respectively.
   var self = this;
   self.sourceUnit = self.validateUnit(unitStr);
   self.sourceValue = amount;
