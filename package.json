@@ -1,0 +1,17 @@
+{
+  "name": "converty",
+  "version": "1.0.0",
+  "description": "A little JS program to convert between like units",
+  "main": "convert.js",
+  "dependencies": {
+    "jasmine": "^2.5.3"
+  },
+  "devDependencies": {
+    "jasmine": "^2.5.3"
+  },
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "Eric Peers",
+  "license": "ISC"
+}
