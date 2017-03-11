@@ -99,14 +99,14 @@ Conversion.prototype.validateUnit = function(unitStr) {
   unit = unitStr.toLowerCase(); //see how we converted that camelcase? ;)
   switch (unit) {
     //weight types
-  case "lb": case "pounds": case "pound": //I hate how my editor doesn't indent case here...
+  case "lb": case "lbs": case "pounds": case "pound": //I hate how my editor doesn't indent case here...
     return {
       "type": Conversion.TYPE.WEIGHT,
       "unit": Conversion.UNIT.POUND
     }
     break;
 
-  case "kg": case "kilogram": case "kilo":
+  case "kg": case "kilogram": case "kilo": case "kilos": case "kilograms":
     return {
       "type": Conversion.TYPE.WEIGHT,
       "unit": Conversion.UNIT.KILOGRAM
@@ -157,7 +157,7 @@ Conversion.prototype.validateUnit = function(unitStr) {
     };
     break;
 
-  case "bomber":
+  case "bomber": case "bombers":
     return {
       "type": Conversion.TYPE.VOLUME,
       "unit": Conversion.UNIT.BOMBER
@@ -166,7 +166,7 @@ Conversion.prototype.validateUnit = function(unitStr) {
 
 
   default:
-    throw new SyntaxError("Unit: " + unit + "not valid");
+    throw new SyntaxError("Unit: " + unitStr + " not valid");
   }
 
 }
